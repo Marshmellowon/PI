@@ -32,6 +32,7 @@ draw_dot_x = []
 draw_dot_y = []
 draw_dot_color = []
 
+# 실제 PI값
 pi = 3.141592653589793238462643
 print()
 print("PI", pi)
@@ -42,7 +43,7 @@ run = True
 time_print = pygame.time.get_ticks()
 while run:
     # speed
-    time = clock.tick(fps) / 100000
+    time = clock.tick(fps) / 10000000
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
