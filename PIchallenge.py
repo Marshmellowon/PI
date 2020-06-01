@@ -16,7 +16,7 @@ from math import sqrt
 
 width = 400
 height = 400
-fps = 100
+fps = 10000000
 
 # pygame 초기화
 pygame.init()
@@ -43,7 +43,7 @@ run = True
 time_print = pygame.time.get_ticks()
 while run:
     # speed
-    time = clock.tick(fps) / 10000000
+    time = clock.tick(fps) / 100
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -79,12 +79,12 @@ while run:
         color = draw_dot_color[i]
         screen.set_at((x_, y_), color)
 
-        if pygame.time.get_ticks() - time_print >= 100:
-            PI = 4 * (dot_circle / tot_dot)
-            time_print = pygame.time.get_ticks()
-            print("calculating PI: ", PI)
+    if pygame.time.get_ticks() - time_print >= 100:
+        PI = 4 * (dot_circle / tot_dot)
+        time_print = pygame.time.get_ticks()
+        print("calculating PI: ", PI)
 
-        pygame.display.flip()
+    pygame.display.flip()
 
 pygame.quit()
 quit()
