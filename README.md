@@ -35,7 +35,7 @@ pygame을 사용하기위한 기본적인 구조이다.
 ### 실행 화면
 code: [pygame을 활용한 Approximating PI](https://github.com/Marshmellowon/PI/blob/master/PIchallenge.py)
 코드를 실행한 화면 이다.
-![run]()
+![run](./PI.JPG)
 
 ### 정리
 python은 사용해 볼수록 흥미롭고 다양한 작업을 할 수 있는 언어인것 같다.   
